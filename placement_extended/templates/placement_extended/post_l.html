@@ -1,0 +1,193 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/modern-business.css' %}">
+
+<style >
+
+yourContainer {
+    width: 500px;
+    height: 170px;
+}
+
+yourContainer img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+yourContainerg {
+    width: 250px;
+    height: 250px;
+}
+
+yourContainerg img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand" href="/">COMPUTER ENGINEERING DEPT.</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/academics">Academics</a>
+                    </li>
+                    <li>
+                        <a href="/download">Downloads</a>
+                    </li>
+                    
+                     <li>
+                        <a href="#">Campus</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Faculty <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/faculty">TEACHING STAFF</a>
+                            </li>
+                            <li>
+                                <a href="#">NON TEACHING STAFF</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/" class="dropdown-toggle" data-toggle="dropdown">Placements <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                 <a href="/placement_rec">PLACEMENT CELL</a>
+                            </li>
+                            <li>
+                                <a href="/placement_extended">PLACEMENT RECORDS</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                  
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a>
+                    </li>
+                    <li class="active">Placement Cell</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Intro Content -->
+        
+        
+        <!-- /.row -->
+
+
+   
+ 
+
+
+             
+              <div class="row">
+            <div class="col-lg-12">
+               <center> <h2 class="page-header">Placement Records</h2></center>
+             <div class = "container">
+                             
+{% for post in postss %}
+<div class="list-group">
+  <a href="">
+    <h4> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; <a href="{% url 'post_detail' pk=post.pk %}">{{post.placement_year}}</h4>
+  </a>
+</div>
+{% endfor %}
+  </div>   
+
+            
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
