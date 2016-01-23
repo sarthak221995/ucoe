@@ -33,8 +33,10 @@ urlpatterns = [
 
      
      url(r'^resources/', include('academics.urls')),
+      url(r'^campus/', include('campus.urls')),
      url(r'^placement_extended/', include('placement_extended.urls')),
      url(r'^tinymce/', include('tinymce.urls')),
+     url(r'^faculty_non_teaching/', include('faculty_non_teaching.urls')),
      url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
             'document_root': settings.MEDIA_ROOT,
         })

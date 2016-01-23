@@ -3,6 +3,6 @@ from .models import Post
 
 class PostAdmin(admin.ModelAdmin):
 	list_filter = ['created','modified']
-	list_display = ('title','created','modified')
+	list_display = ('created','title','modified')
 
 admin.site.register(Post,PostAdmin)

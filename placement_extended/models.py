@@ -32,7 +32,7 @@ class Post(models.Model):
 
 
 
-	upload = models.FileField(upload_to='uploads/placement_extended')
+	
 	created = models.DateTimeField(auto_now_add=True)
 	modified = models.DateTimeField(auto_now=True)
 

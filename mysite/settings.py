@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'academics',
     'placement_extended',
     'tinymce',
+    'campus',
+    'faculty_non_teaching',
 ]
 
 MIDDLEWARE_CLASSES = [
