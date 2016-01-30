@@ -20,8 +20,9 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
      url(r'', include('notice.urls')),
-     url(r'', include('highlights.urls')),
+     url(r'^hackoders/',include('highlights.urls')),
      url(r'^about/', include('about.urls')),
      url(r'^tech_faculty/', include('faculty.urls')),
      url(r'^faculty/', include('faculty.urls')),
@@ -31,7 +32,7 @@ urlpatterns = [
           url(r'^vision/', include('academics.urls')),
 
 
-     
+
      url(r'^resources/', include('academics.urls')),
       url(r'^campus/', include('campus.urls')),
      url(r'^placement_extended/', include('placement_extended.urls')),
@@ -40,5 +41,5 @@ urlpatterns = [
      url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
             'document_root': settings.MEDIA_ROOT,
         })
-     
+
 ]

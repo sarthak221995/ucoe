@@ -69,7 +69,7 @@
                             <li>
                                 <a href="/academics/resources/">RESOURCES</a>
                             </li>
-                            
+
                         </ul>
                     </li>
 
@@ -89,15 +89,15 @@
                             <li>
                                 <a href="/download/syllabus/">SYLLABUS</a>
                             </li>
-                            
+
                         </ul>
                     </li>
-                   
+
 
                      <li class="dropdown">
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Campus</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                           
+
                             <li>
                                  <a href="/campus/college/">COLLEGE</a>
                             </li>
@@ -107,10 +107,10 @@
                             <li>
                                 <a href="/campus/hostel/">HOSTEL</a>
                             </li>
-                            
+
                         </ul>
                     </li>
-                    
+
 
 
                     <li class="dropdown">
@@ -185,7 +185,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Teaching Faculty
-                    
+
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="../">Home</a>
@@ -202,20 +202,20 @@
                 <table class="table table-hover">
                  <thead> <tr> <th>#</th> <th>Organization</th> <th>Date_of_visit</th> <th>No_of_offer</th> <th>compensation</th>
                  </tr> </thead>
-                 <tbody> 
+                 <tbody>
 
 {% for p in posts %}
-                    <tr> <th scope="row">{{p.pk}}</th> 
-                    <td><b><a href="{% url 'post_summary' placement_year=p.placement_year pk=p.pk %}"><b>{{ p.Organization }}</a></b></td> 
-                    <td>{{ p.Date_of_visit }}</td> 
+                    <tr> <th scope="row">{{p.pk}}</th>
+                    <td><b><a href="{% url 'post_summary' placement_year=p.placement_year pk=p.pk %}"><b>{{ p.Organization }}</a></b></td>
+                    <td>{{ p.Date_of_visit }}</td>
                     <td>{{ p.No_of_offer }}</td>
-                    <td>{{ p.compensation }}</td>            
+                    <td>{{ p.compensation }}</td>
                      </tr>
-                  {% endfor%}   
+                  {% endfor%}
 </tbody> </table>
-                
-    
-   
+
+
+
 
 
                  <!-- <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr>  -->
@@ -230,13 +230,6 @@
         <hr>
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
 
     </div>
     <!-- /.container -->
