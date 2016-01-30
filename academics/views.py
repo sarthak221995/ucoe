@@ -11,7 +11,7 @@ def vision(request):
 	return render(request, 'academics/vision.html', {})
 
 def resources(request):
-
+	print "Hello World!"
     posts = Post.objects.all()
     return render(request, 'academics/resources.html', {'posts': posts})
 
