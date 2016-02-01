@@ -19,7 +19,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CSE_PUP DEPT</title>
+    <title>COMPUTER ENGINEERING DEPARTMENT</title>
 
 
     <!-- Custom Fonts
@@ -207,23 +207,53 @@
                <center> <h2 class="page-header">DOWNLOAD SECTION</h2></center>
              <div class = "container">
                              
-{% for post in posts %}
+
+  </div>   
+
+
+<ul class="nav nav-tabs nav-justified">
+    <li class="active"><a data-toggle="pill" href="#faculty">FACULTY DOWNLOAD SECTION</a></li>
+    <li><a data-toggle="pill" href="#student">STUDENT DOWNLOAD SECTION</a></li>    
+  </ul>
+
+<div class="tab-content">
+    <div id="faculty" class="tab-pane fade in active">
+      
+      <br>
+       {% for post in posts %}
 {% if post.title %}
+{% if post.people == "FACULTY"%}
 <div class="list-group">
   <a href="/media/{{post.upload}}">
     <h4> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; {{post.title}}</h4>
   </a>
 </div>
 {% endif %}
+{% endif %}
 {% endfor %}
-  </div>   
-
-            
-
-        <!-- Footer -->
-       
-
     </div>
+<div id="student" class="tab-pane fade">
+      
+     <br>
+
+      {% for post in posts %}
+{% if post.title %}
+{% if post.people == "STUDENTS"%}
+<div class="list-group">
+  <a href="/media/{{post.upload}}">
+    <h4> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; {{post.title}}</h4>
+  </a>
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}
+
+
+
+    </div></div>
+
+
+      
     <!-- /.container -->
 
     <!-- jQuery -->

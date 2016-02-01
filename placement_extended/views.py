@@ -7,13 +7,13 @@ from django.db.models import Count
 
 
 def post_list(request):
-    posts = Post.objects.values('placement_year').annotate(dcount=Count('placement_year'))
+    posts = Post.objects.values('placement_year').annotate(dcount=Count('placement_year')).order_by('-placement_year')
     
     return render(request, 'placement_extended/post_list.html', {'posts': posts})
 
 
 def post_detail(request, placement_year):
-	posts = Post.objects.filter(placement_year=placement_year)
+	posts = Post.objects.filter(placement_year=placement_year).order_by('-placement_year')
 	# posts = get_object_or_404(Post, placement_year=placement_year)
 	return render(request, 'placement_extended/post_detail.html', {'posts': posts})
 

@@ -200,12 +200,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <table class="table table-hover">
-                 <thead> <tr> <th>#</th> <th>Organization</th> <th>Date_of_visit</th> <th>No_of_offer</th> <th>compensation</th>
+                 <thead> <tr> <th>Organization</th> <th>Date_of_visit</th> <th>No_of_offer</th> <th>compensation</th>
                  </tr> </thead>
                  <tbody>
 
 {% for p in posts %}
-                    <tr> <th scope="row">{{p.pk}}</th>
+                    <tr> 
                     <td><b><a href="{% url 'post_summary' placement_year=p.placement_year pk=p.pk %}"><b>{{ p.Organization }}</a></b></td>
                     <td>{{ p.Date_of_visit }}</td>
                     <td>{{ p.No_of_offer }}</td>
@@ -235,7 +235,8 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="../static/js/jquery.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body>
