@@ -8,7 +8,7 @@ def post_list(request):
 	posts = Post.objects.all()
 	# posts.slide_image1 = settings.MEDIA_ROOT+posts.slide_image1
 
-	return render(request, 'notice/e5.html', {'posts': posts})
+	return render(request, 'notice/post_list.html', {'posts': posts})
 
 
 def hackoders_list(request):
