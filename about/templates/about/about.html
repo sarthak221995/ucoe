@@ -10,16 +10,24 @@
 }
 
         </style>
+       
 
 <head>
-
+<style>
+.wrapper {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-size: cover;
+}
+</style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CSE_PUP DEPT</title>
+    <title>COMPUTER SCIENCE DEPARTMENT</title>
 
 
     <!-- Custom Fonts
@@ -189,15 +197,16 @@
 
         <!-- Intro Content -->
         <div class="row">
-            <div class="col-md-6">
-                {% for a in about %} 
-                {% if a.hod_image %}
-                <img class="img-responsive" src="/media/{{a.hod_image}}" alt="">
-                {% endif %}
-                {% endfor  %}
+            
+                <div class = "container">
+<div class="wrapper" style="background-image: url('/static/images/group.PNG');"></div>
+ </div>               
+                <!-- img class="img-responsive" src="/static/images/group.PNG" alt=""> -->
+               
 
             </div>
-            <div class="col-md-6">
+            <div class = "row">
+            <div class="col-md-12">
                 <center><h2 class="page-header">ABOUT</h2></center>
                <p align="justify">
 
@@ -208,7 +217,7 @@ Department has more than 1000 students enrolled for UG, PG courses including res
 The Department has strong research groups in the broad areas of: Digital Image Processing, Natural Language Processing, Network Security, Cloud Computing, Data Mining, Bio-informatics, Soft Computing.
 Earlier it was part of University College of Engineering, established in 2003. Now it has been working as a separate department since September, 2013 with a goal to impart Quality Education in the area of Engineering and Technology.
 
- </p>
+ </p></div>
             </div>
                         
         </div>
@@ -216,10 +225,11 @@ Earlier it was part of University College of Engineering, established in 2003. N
         <!-- /.row -->
 
 
-        <div class="row">
+        
             
 
 <div class="row">
+    <div class = "container">
             <center> <h2 class="page-header">LOCATION</h2></center>
 <div class = "col-md-6">
 <div class = "container">
@@ -249,10 +259,10 @@ Earlier it was part of University College of Engineering, established in 2003. N
 </div>
      
 
-
+</div>
    </div>
 
-   </div>
+  
                                     
 
 
