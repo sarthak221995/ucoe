@@ -7,13 +7,16 @@ class Post(models.Model):
     title_notice = models.CharField(max_length=200, blank = True, null = True)
     text_notice = models.TextField(blank = True, null = True)
     created_date_notice = models.DateTimeField(
-            blank = True, null = True)          
+            blank = True, null = True)
+    link_notice = models.CharField(max_length=200, blank = True, null = True)         
 
     author_announcement = models.CharField(max_length=200, blank = True, null = True)
     title_announcement = models.CharField(max_length=200, blank = True, null = True)
     text_announcement = models.TextField(blank = True, null = True)
     created_date_announcement = models.DateTimeField(
             blank = True, null = True)
+    link_announcement = models.CharField(max_length=200, blank = True, null = True)         
+
 
 
     event_title = models.CharField(max_length=200, blank = True, null = True)
