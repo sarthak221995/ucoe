@@ -5,7 +5,7 @@ from django.conf import settings
 
 
 def post_list(request):
-	posts = Post.objects.all()
+	posts = Post.objects.all().order_by('-created')
 	# posts.slide_image1 = settings.MEDIA_ROOT+posts.slide_image1
 
 	return render(request, 'notice/post_list.html', {'posts': posts})
