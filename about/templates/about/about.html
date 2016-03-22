@@ -1,53 +1,58 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/modern-business.css' %}">
-        <style>
-        .selected img {
-    opacity:0.5;
-}
-
-        </style>
-       
 
 <head>
-<style>
-.wrapper {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    background-size: cover;
-}
-</style>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>COMPUTER SCIENCE DEPARTMENT</title>
+    <title>COMPUTER ENGINEERING DEPARTMENT</title>
 
+    <!-- Bootstrap Core CSS -->
+   <link rel="stylesheet" href="{% static 'css/simple-sidebar.css' %}">
 
-    <!-- Custom Fonts
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
--->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<style>
+.navbar-collapse {
+    background-color: #000000;
+    border-color: #000000;
+}
+.navbar-inverse {
+    background-color: #000000;
+    border-color: #000000;
+}
+.wrapper {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.wraper {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-size: cover;
+}
+</style>
+    
+    
+
+    
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container" >
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -57,11 +62,13 @@
                     <span class="icon-bar"></span>
 
                 </button>
-                <a class="navbar-brand" href="/"><b>HOME</b></a>
-            </div>
+               </div>
+               <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav navbar-right">
+
                     <li>
                         <a href="/about"><b>About</b></a>
                     </li>
@@ -69,15 +76,15 @@
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Academics</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                 <a href="/academics">HOD'S DESK</a>
+                                 <a href="/academics/#HOD"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;HOD'S DESK</a>
                             </li>
                             <li>
-                                <a href="/academics/vision/">VISION</a>
+                                <a href="/academics/#VISION"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;VISION</a>
                             </li>
                             <li>
-                                <a href="/academics/resources/">RESOURCES</a>
+                                <a href="/academics/#RESOURCES"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;RESOURCES</a>
                             </li>
-                            
+
                         </ul>
                     </li>
 
@@ -86,49 +93,49 @@
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Downloads</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                            <li>
-                                 <a href="/download">DOWNLOADS</a>
+                                 <a href="/download"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;DOWNLOADS</a>
                             </li>
                             <li>
-                                 <a href="/download/previous_records">PREVIOUS YEAR RESOURCES</a>
+                                 <a href="/download/previous_records"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;PREVIOUS YEAR RESOURCES</a>
                             </li>
                             <li>
-                                <a href="/download/time_table">TIME TABLE</a>
+                                <a href="/download/time_table"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;TIME TABLE</a>
                             </li>
                             <li>
-                                <a href="/download/syllabus/">SYLLABUS</a>
+                                <a href="/download/syllabus/"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;SYLLABUS</a>
                             </li>
-                            
+
                         </ul>
                     </li>
-                   
+
 
                      <li class="dropdown">
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Campus</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                           
+
                             <li>
-                                 <a href="/campus/college/">COLLEGE</a>
+                                 <a href="/campus/college/#college"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;COLLEGE</a>
                             </li>
                             <li>
-                                <a href="/campus/labs/">LABS</a>
+                                <a href="/campus/college/#labs"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;LABS</a>
                             </li>
                             <li>
-                                <a href="/campus/hostel/">HOSTEL</a>
+                                <a href="/campus/college/#hostel"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;HOSTEL</a>
                             </li>
-                            
+
                         </ul>
                     </li>
-                    
+
 
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Faculty</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="/faculty">TEACHING STAFF</a>
+                                <a href="/faculty"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;TEACHING STAFF</a>
                             </li>
                             <li>
-                                <a href="/faculty_non_teaching">NON TEACHING STAFF</a>
+                                <a href="/faculty_non_teaching"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;NON TEACHING STAFF</a>
                             </li>
 
                         </ul>
@@ -137,10 +144,10 @@
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Placements </b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                 <a href="/placement_rec">PLACEMENT CELL</a>
+                                 <a href="/placement_rec"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;PLACEMENT CELL</a>
                             </li>
                             <li>
-                                <a href="/placement_extended">PLACEMENT RECORDS</a>
+                                <a href="/placement_extended"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;PLACEMENT RECORDS</a>
                             </li>
 
                         </ul>
@@ -153,62 +160,50 @@
         <!-- /.container -->
     </nav>
 
+    <div id="wrapper">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
                     
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="/">Home</a>
-                    </li>
-                    <li class="active">About</li>
-                </ol>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Intro Content -->
-        <div class="row">
-            
-                <div class = "container">
-<div class="wrapper" style="background-image: url('/static/images/group.PNG');"></div>
- </div>               
-                <!-- img class="img-responsive" src="/static/images/group.PNG" alt=""> -->
+                </li>
+                <li >
+                    <a href="/"><i class="fa fa-fw fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>HOME</b></a>
+                </li>
+                <li>
+                    <a href="#about"><i class="fa fa-fw fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABOUT</a>
+                </li>
+                <li>
+                    <a href="#locate"><i class="fa fa-fw fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOCATE US!</a>
+                </li>
                
+               
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
 
-            </div>
-            <div class = "row">
-            <div class="col-md-12">
-                <center><h2 class="page-header">ABOUT</h2></center>
-               <p align="justify">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                       <div class="row">
+            <div class="col-lg-12">
+             
+              
+
+</br>
+<br>
+<br>
+
+ <div id="about"> 
+  <div class="wraper" style="background-image: url('/static/images/group.PNG');"></div>
+                   <h1 class="page-header"><b>ABOUT</b></h1>
+   <div class = "row">    
+           </br>
+                
+           <p align="justify">
 
  
 In view of the increasing importance of the Engineering Sciences, University College of Engineering was established in 2003 to offer Bachelor of Technology degree in the field of Computer Engineering, Electronics & Communication Engineering and Mechanical Engineering. Keeping in view the need of infrastructure development sector, the college has started Bachelor of Technology of Civil Engineering in August 2012.  In the next year, the University College of Engineering was been bifurcated into five separate departments i.e. 'Computer Engineering', 'Electronics and Communication Engineering', ‘Mechanical Engineering’, ‘Civil Engineering’ and ‘Basic Applied Sciences’.
@@ -217,23 +212,32 @@ Department has more than 1000 students enrolled for UG, PG courses including res
 The Department has strong research groups in the broad areas of: Digital Image Processing, Natural Language Processing, Network Security, Cloud Computing, Data Mining, Bio-informatics, Soft Computing.
 Earlier it was part of University College of Engineering, established in 2003. Now it has been working as a separate department since September, 2013 with a goal to impart Quality Education in the area of Engineering and Technology.
 
- </p></div>
-            </div>
-                        
-        </div>
-        
-        <!-- /.row -->
+ </p>
+ 
+          </div>
+</div>
+</br>
+</br>
 
 
-        
-            
 
-<div class="row">
-    <div class = "container">
-            <center> <h2 class="page-header">LOCATION</h2></center>
+
+
+</br>
+</br>
+
+
+ <div id="locate"> 
+<div class = "row">
+
+
+
+
+
+                   <h1 class="page-header"><b>LOCATION</b></h1>
 <div class = "col-md-6">
-<div class = "container">
-       <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="542" height="343" src="https://maps.google.com/maps?hl=en&q=Punjabi university patiala&ie=UTF8&t=roadmap&z=13&iwloc=B&output=embed"></iframe></div>
+
+       <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="542" height="343" src="https://maps.google.com/maps?hl=en&q=Punjabi university patiala&ie=UTF8&t=roadmap&z=13&iwloc=B&output=embed"></iframe>
 </div>
 <div class = "col-md-6">
 <div class="container">
@@ -262,48 +266,26 @@ Earlier it was part of University College of Engineering, established in 2003. N
 </div>
    </div>
 
-  
-                                    
 
 
 
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
-
-
-
-           
-
-
-
-        <!-- Footer -->
-       
-
-    </div>
-    <!-- /.container -->
+    <!-- /#wrapper -->
 
     <!-- jQuery -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    
 
 </body>
 

@@ -1,25 +1,9 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/modern-business.css' %}">
-        <style>
-        .selected img {
-    opacity:0.5;
-}
-
-        </style>
 
 <head>
-<style>
-.wrapper {
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-    background-size: cover;
-}
-</style>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,25 +12,40 @@
 
     <title>COMPUTER ENGINEERING DEPARTMENT</title>
 
+    <!-- Bootstrap Core CSS -->
+   <link rel="stylesheet" href="{% static 'css/simple-sidebar.css' %}">
 
-    <!-- Custom Fonts
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
--->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<style>
+.navbar-collapse {
+    background-color: #000000;
+    border-color: #000000;
+}
+.navbar-inverse {
+    background-color: #000000;
+    border-color: #000000;
+}
+.wrapper {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background-size: cover;
+}
+</style>
+    
+    
+
+    
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container" >
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -56,11 +55,13 @@
                     <span class="icon-bar"></span>
 
                 </button>
-                <a class="navbar-brand" href="/"><b>HOME</b></a>
-            </div>
+               </div>
+               <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav navbar-right">
+
                     <li>
                         <a href="/about"><b>About</b></a>
                     </li>
@@ -68,15 +69,15 @@
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Academics</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                 <a href="/academics">HOD'S DESK</a>
+                                 <a href="/academics/#HOD"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;HOD'S DESK</a>
                             </li>
                             <li>
-                                <a href="/academics/vision/">VISION</a>
+                                <a href="/academics/#VISION"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;VISION</a>
                             </li>
                             <li>
-                                <a href="/academics/resources/">RESOURCES</a>
+                                <a href="/academics/#RESOURCES"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;RESOURCES</a>
                             </li>
-                            
+
                         </ul>
                     </li>
 
@@ -85,49 +86,49 @@
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Downloads</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                            <li>
-                                 <a href="/download">DOWNLOADS</a>
+                                 <a href="/download"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;DOWNLOADS</a>
                             </li>
                             <li>
-                                 <a href="/download/previous_records">PREVIOUS YEAR RESOURCES</a>
+                                 <a href="/download/previous_records"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;PREVIOUS YEAR RESOURCES</a>
                             </li>
                             <li>
-                                <a href="/download/time_table">TIME TABLE</a>
+                                <a href="/download/time_table"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;TIME TABLE</a>
                             </li>
                             <li>
-                                <a href="/download/syllabus/">SYLLABUS</a>
+                                <a href="/download/syllabus/"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;SYLLABUS</a>
                             </li>
-                            
+
                         </ul>
                     </li>
-                   
+
 
                      <li class="dropdown">
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Campus</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                           
+
                             <li>
-                                 <a href="/campus/college/">COLLEGE</a>
+                                 <a href="/campus/college/#college"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;COLLEGE</a>
                             </li>
                             <li>
-                                <a href="/campus/labs/">LABS</a>
+                                <a href="/campus/college/#labs"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;LABS</a>
                             </li>
                             <li>
-                                <a href="/campus/hostel/">HOSTEL</a>
+                                <a href="/campus/college/#hostel"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;HOSTEL</a>
                             </li>
-                            
+
                         </ul>
                     </li>
-                    
+
 
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Faculty</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="/faculty">TEACHING STAFF</a>
+                                <a href="/faculty"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;TEACHING STAFF</a>
                             </li>
                             <li>
-                                <a href="/faculty_non_teaching">NON TEACHING STAFF</a>
+                                <a href="/faculty_non_teaching"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;NON TEACHING STAFF</a>
                             </li>
 
                         </ul>
@@ -136,10 +137,10 @@
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Placements </b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                 <a href="/placement_rec">PLACEMENT CELL</a>
+                                 <a href="/placement_rec"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;PLACEMENT CELL</a>
                             </li>
                             <li>
-                                <a href="/placement_extended">PLACEMENT RECORDS</a>
+                                <a href="/placement_extended"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;PLACEMENT RECORDS</a>
                             </li>
 
                         </ul>
@@ -152,128 +153,155 @@
         <!-- /.container -->
     </nav>
 
+    <div id="wrapper">
 
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li >
+                    <a href="/"><i class="fa fa-fw fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>HOME</b></a>
+                </li>
+                <li>
+                    <a href="#HOD"><i class="fa fa-fw fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM THE DESK</a>
+                </li>
+                <li>
+                    <a href="#VISION"><i class="fa fa-fw fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VISION</a>
+                </li>
+                <li>
+                    <a href="#RESOURCES"><i class="fa fa-fw fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RESOURCES</a>
+                </li>
+               
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                       <div class="row">
             <div class="col-lg-12">
-                <!-- <h1 class="page-header">
-                    
-                </h1>
- -->                
+             
+              
 
-<br>
- <ol class="breadcrumb">
-                    <li><a href="/">Home</a>
-                    </li>
-                    <li class="active">Academics</li>
-                </ol>
+</br>
+
+ 
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Intro Content -->
-        <div class="row">
-            
-                <div class = "container">
+ <div id="HOD"> 
+            <div class = "container">
+                   <h1 class="page-header">FROM THE DESK</h1>
 <div class="wrapper" style="background-image: url('/static/images/desk.jpg');"></div>
- </div>             
+            
                
-             </div>   
+             
             <div class = "row">
-            <div class="container">
-                <center><h2 class="page-header">MESSAGE FROM HEAD</h2></center>
+              
+           </br>
+                
                 <p align="justify">It is a pleasure to lead the department of Computer Engineering. The aim of the department is to pursue excellence in Computer Engineering through teaching and research and we are achieving our objectives with the help of our highly qualified and distinguished faculty. We target to enhance not only their academic knowledge but to nurture their practical skills and provide professional grooming so that our students are ready to serve as they join industry and provide valuable contribution. For this purpose, the department arranges various guest lectures, workshops and ethnical training by industrial professionals so that they come-up as thorough professionals and inspiring individuals.</p>
 <p><i><left>- DR LAKHWINDER KAUR<left></i></p>
  
-            </div>
+          </div>
                         
-        </div>
+       
         </div>
         <!-- /.row -->
-
-<h1 class="page-header">
-                    
-                </h1>
- 
-
-            
+</div>
+</br>
+</br>
+</div>
 
 
 
 
 
 
+<div class="container">
+<div class = "row">
+    <div class = "com-md-12">
+        <div class="panel-heading">
+                <h1 class="page-header">VISION</h1>
+            </div>
+            <div id="VISION"> 
+            <p align="justify">Our vision is to be excellent, engaged and accessible. We aim to be recognised for our leadership in:<br><br><b>
+•   Empowering our students to grow their capabilities and transform their lives and of their society.<br>
+•   Building of technical environment in our university.<br>
+•   Encouraging support in a wide range of disciplines in various fields of Computer Science.<br>
+•   Engaging with industry and community to make the world a better place, through the creation, sharing and use of new knowledge.</b><br><br>
+We will achieve our goals through our distinctive approach to curriculum, the student experience, research and knowledge exchange, and engagement with industry and the community.
+
+</p>
+           
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="container">
+<div class = "row">
+    <div class = "com-md-12">
+        <div class="panel-heading">
+               <h1 class="page-header">RESOURCES</h1></center>
+            </div>
+            <div id="RESOURCES"> 
+           {% for post in posts %}
+           {% if post.text  %}
+
+<div class="list-group">
+  <a href="/media/{{post.attachement}}">
+    <h4> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; {{post.text}}</h4>
+  </a>
+</div>
+{% endif %}
+{% endfor %}
+
+
+
+           
+        </div>
+    </div>
+</div>
+</div>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Footer -->
-       
+                       <!--  <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
 
     </div>
-    <!-- /.container -->
+    <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 
 </body>
 

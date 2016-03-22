@@ -1,16 +1,7 @@
-{% load staticfiles %}
+
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/modern-business.css' %}">
-        <style>
-        .selected img {
-    opacity:0.5;
-}
-
-
-        </style>
 
 <head>
 
@@ -20,28 +11,49 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Computer Engineering Dept</title>
+    <title>COMPUTER ENGINEERING DEPARTMENT</title>
 
-<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
-<style ></style>
-    <!-- Custom Fonts
+    <!-- Bootstrap Core CSS -->
+          
+                <link rel="stylesheet" type="text/css" href="{% static 'css/homePage.css' %}" />
 
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
--->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" href="{% static 'css/modern-business.css' %}">
+   <link rel="stylesheet" href="{% static 'css/simple-sidebar.css' %}">
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<style>
+.navbar-collapse {
+    background-color: #000000;
+    border-color: #000000;
+}
+.navbar-inverse {
+    background-color: #000000;
+    border-color: #000000;
+}
+.wrapper {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+
+</style>
+    
+    
+
+    
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container" >
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -51,11 +63,13 @@
                     <span class="icon-bar"></span>
 
                 </button>
-                <a class="navbar-brand" href="/"><b>HOME</b></a>
-            </div>
+               </div>
+               <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav navbar-right">
+
                     <li>
                         <a href="/about"><b>About</b></a>
                     </li>
@@ -63,13 +77,13 @@
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Academics</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                 <a href="/academics">HOD'S DESK</a>
+                                 <a href="/academics/#HOD"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;HOD'S DESK</a>
                             </li>
                             <li>
-                                <a href="/academics/vision/">VISION</a>
+                                <a href="/academics/#VISION"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;VISION</a>
                             </li>
                             <li>
-                                <a href="/academics/resources/">RESOURCES</a>
+                                <a href="/academics/#RESOURCES"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;RESOURCES</a>
                             </li>
 
                         </ul>
@@ -80,16 +94,16 @@
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Downloads</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                            <li>
-                                 <a href="/download">DOWNLOADS</a>
+                                 <a href="/download"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;DOWNLOADS</a>
                             </li>
                             <li>
-                                 <a href="/download/previous_records">PREVIOUS YEAR RESOURCES</a>
+                                 <a href="/download/previous_records"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;PREVIOUS YEAR RESOURCES</a>
                             </li>
                             <li>
-                                <a href="/download/time_table">TIME TABLE</a>
+                                <a href="/download/time_table"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;TIME TABLE</a>
                             </li>
                             <li>
-                                <a href="/download/syllabus/">SYLLABUS</a>
+                                <a href="/download/syllabus/"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;SYLLABUS</a>
                             </li>
 
                         </ul>
@@ -101,13 +115,13 @@
                         <ul class="dropdown-menu">
 
                             <li>
-                                 <a href="/campus/college/">COLLEGE</a>
+                                 <a href="/campus/college/#college"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;COLLEGE</a>
                             </li>
                             <li>
-                                <a href="/campus/labs/">LABS</a>
+                                <a href="/campus/college/#labs"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;LABS</a>
                             </li>
                             <li>
-                                <a href="/campus/hostel/">HOSTEL</a>
+                                <a href="/campus/college/#hostel"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;HOSTEL</a>
                             </li>
 
                         </ul>
@@ -119,10 +133,10 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Faculty</b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="/faculty">TEACHING STAFF</a>
+                                <a href="/faculty"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;TEACHING STAFF</a>
                             </li>
                             <li>
-                                <a href="/faculty_non_teaching">NON TEACHING STAFF</a>
+                                <a href="/faculty_non_teaching"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;NON TEACHING STAFF</a>
                             </li>
 
                         </ul>
@@ -131,10 +145,10 @@
                         <a href="/" class="dropdown-toggle" data-toggle="dropdown"><b>Placements </b><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                 <a href="/placement_rec">PLACEMENT CELL</a>
+                                 <a href="/placement_rec"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;PLACEMENT CELL</a>
                             </li>
                             <li>
-                                <a href="/placement_extended">PLACEMENT RECORDS</a>
+                                <a href="/placement_extended"><i class="fa fa-fw fa-arrow-right"></i>&nbsp;&nbsp;PLACEMENT RECORDS</a>
                             </li>
 
                         </ul>
@@ -165,14 +179,19 @@
 
 
 
+
+
+
    <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
+         <div class="container">
         <ol class="carousel-indicators">
-            <li><img  src="/media/images/puplogo.png" alt="" ></li>
+            <li><img  src="/media/images/puplogo.png" alt="" style = " padding:400px" ></li>
             <!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li> -->
         </ol>
+    </div>
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
@@ -251,16 +270,16 @@
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">
+                <h1 class="page-header"><b>
                    DEPARTMENT OF COMPUTER ENGINEERING
-                </h1>
+               </b> </h1>
             </div>
 
 
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i>NOTICE / ANNOUNCEMENT</h4>
+                        <h4><i class="fa fa-fw fa-bookmark"></i>NOTICE / ANNOUNCEMENT</h4>
                     </div>
                     <div class="panel-body">
 
@@ -287,7 +306,7 @@ style="width:300px;Height:130px;" scrollamount="3" direction="Up">
                 <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i>EVENTS</h4>
+                        <h4><i class="fa fa-fw fa-bookmark"></i>EVENTS</h4>
                     </div>
                     <div class="panel-body">
                         <marquee onmouseover="this.stop()" onmouseout="this.start()"<br
@@ -351,7 +370,7 @@ style="width:300px;Height:130px;" scrollamount="3" direction="Up">
 <div class = "row">
     <div class = "com-md-12">
         <div class="panel-heading">
-                <center><h3><i class="fa fa-fw fa-gift"></i>MISSION</h3></center>
+                <center><h3><i class="fa fa-fw fa-bullseye"></i>MISSION</h3></center>
             </div>
 
             <p align="justify">The Department of Computer Engineering is committed to build Punjabi University an internationally significant research university, with undergraduate, graduate and professional programs of excellent quality. The department also has a mission to create an exceptional learning environment that advances a civil and sustainable society, and supports outstanding research to serve the people.
@@ -372,11 +391,68 @@ style="width:300px;Height:130px;" scrollamount="3" direction="Up">
 
 
 
+        <!-- Wrapper for Slides -->
+ 
 
 
 
 
 
+
+
+
+
+<h3><b>ACTIVITIES</b></h3>
+<div class="container-fluid">
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+        
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox" style="">
+
+
+            <div class="item active">
+                <img src="/media/images/1410348081uce6.jpg" alt="Chania"  style="height:400px; width:100%; margin-left:auto; margin-right:auto" id="img1">
+                
+            </div>
+
+{% for post in posts %}
+{% if post.event_image %}
+
+            <div class="item">
+                <img src="{{post.event_image.url}}" alt="Chania" style="height:400px; width:100%; margin-left:auto; margin-right:auto">
+                <div class="carousel-caption">
+                    <h3>{{post.event_title}}</h3>
+                    <p>{{post.event_text}}</p>
+                </div>
+            </div>
+
+             {% endif %}
+{% endfor %}
+
+            
+
+    <!-- Left and right controls -->
+       
+    </div> 
+    
+    
+
+<!-- <div class="slider_option">
+  <input type="checkbox" id="checkbox">
+  <label for="checkbox">Autoplay Slider</label>-->
+</div>  
+
+
+</div>  
 
 
 
@@ -385,71 +461,57 @@ style="width:300px;Height:130px;" scrollamount="3" direction="Up">
 
 
 <div class="container">
-
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="page-header">UPCOMING EVENTS
-
-                </h3>
+            <div class="row"  >
+        <div class="col-sm-4" style="margin-top:50px">
+            <div class="row" >
+                <div class="col-xs-2">
+                    <img src="{% static 'images/punjabi.jpg' %}" style="margin-top:10px">
+                </div>
+                <div class="col-xs-10">
+                    <h3 style="color:black ;font-family:Georgia">Punjabi University</h3>
+                </div>
             </div>
+            <p style="color:black; font-family:Georgia font-size:16px; margin-top:10px">It was established on the 30 April 1962, and is only the second university in the world to be named after a language, </p>
+            <p style="color:black; font-family:Georgia font-size:16px; margin-top:10px">Punjabi University teaches and researches in science, engineering and technology, humanities, social sciences, performing arts and sports.</p>
+            <p style="color:black; font-family:Georgia font-size:16px; margin-top:10px">The university campus is spread over an area of 316 acres.The institution has 65 teaching and research departments, covering disciplines in Humanities, Science, Fine Arts, Computer Science and Business Management.</p>
         </div>
+        <div class="col-sm-4" style="margin-top:50px">
+            <h3 style="color:black ;font-family:Georgia; text-align:center">Address</h3>
+            <address style="color:black; font-family:Georgia ;font-size:16px; margin-top:10px;text-align:center">
+                Urban Estate Phase II,<br>Urban Estate,<br> Patiala, Punjab 147002
+            </address>
+            <h3 style="text-align:center; margin-top:40px; font-family:Georgia">Contact Us</h3>
+            <div class="center-block row " style="margin-left:100px">
+                <div class="col-xs-2">
+                    <span class="glyphicon glyphicon-envelope" style=" margin-right:-20px; background-color:white"></span>
+                </div>
+                <div class="col-xs-10">
+                    <p>ce.pup@gmail.com</p>
+                </div>
 
-        <!-- Project One -->
-
-{% for post in posts %}
-{% if post.event_image %}
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src='{{post.event_image.url}}' alt="" width="420">
-                </a>
-
-            </div>
-            <div class="col-md-5">
-                <h3>{{post.event_title}}</h3>
-
-                <p>{{post.event_text}}</p>
-
-            </div>
+                <div class="col-xs-2">
+                    <span class="glyphicon glyphicon-earphone" style=" margin-right:-20px ; background-color:white"></span>
+                </div>
+                <div class="col-xs-10">
+                    <p>0175 304 6366</p>
+                </div>
+            </div>  
         </div>
-        <br></br>
-       {% endif %}
-{% endfor %}
-        <hr>
+        <div class="col-sm-4" id="gallery" style="margin-top:50px;">
+            <h3 style="text-align:center; font-family:Georgia">GALLERY
+</h3>
+            <div align="center">    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <h2 class="page-header">GALLERY</h2>
-<div class="row">
-
-{% for post in posts %}
+                {% for post in posts %}
 {% if post.gallery_image %}
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="../../../{{ post.gallery_image.url }}" alt="..."height="100" width="180" >
-    </a>
+ <div > <img src="../../../{{ post.gallery_image.url }}"></div>
+    
   </div>
   {% endif %}
 {% endfor %}
-
+           
+        </div>
+    </div>
 </div>
 
 
@@ -462,17 +524,27 @@ style="width:300px;Height:130px;" scrollamount="3" direction="Up">
 
 
 
-        <!-- Call to Action Section -->
-        <div class="well">
-            <div class="row">
-                <div class="col-md-8">
 
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="http://www.punjabiuniversity.ac.in/">PUNJABI UNIVERSITY</a>
-                </div>
-            </div>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Call to Action Section -->
+      
 
         <hr>
 
@@ -497,15 +569,89 @@ style="width:300px;Height:130px;" scrollamount="3" direction="Up">
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+        interval: 2000 //changes the speed
     })
+
+
+
     </script>
 
 
 
-
-
+</div>
+</div>
 
 </body>
+<footer style="margin-top:50px;margin-bottom:0px">
+    <div class="container-fluid" style="background-color:#333">
+        <div class="row" style="margin-top:30px;">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-xs-6">
+                    <h3 style="color:white"><b>From Punjabi University</b></h3>
+                    <ul class="list1">
+                        <a href="#" ><li class="foot-links">About Punjabi University</li></a>
+                        <a href="#" ><li class="foot-links">Bhai Kahn Singh Nabha Library</li></a>
+                        <a href="http://www.punjabiuniversity.ac.in/pbiuniweb/mechanical/WEBSITE/index.html" ><li class="foot-links">Department of Mechanical Engineering</li></a>
+                        <a href="http://punjabiuniversity.ac.in/pbiuniweb/pages/departments/newece.html" ><li class="foot-links">Department of Electronics and Communication Engineering</li></a>
+ <a href=" http://www.ascpup.ac.in/" ><li class="foot-links">UGC - Human Resource Development Centre</li></a>
 
+        
+                        
+                    </ul>
+                    </div>
+                    <div class="col-xs-6">
+                    <ul>
+                        <a href="http://punjabiuniversity.ac.in/edc/index.html" ><li class="foot-links">Entrepreneurship and Skill Development Cell</li></a>
+                        <a href="http://emrc.org.in/" ><li class="foot-links">Educational Multimedia Research Centre Patiala</li></a>
+                        <a href="http://www.wscpedia.org/" ><li class="foot-links">Women Study Centre</li></a>
+                        <a href="http://www.cswa.ac.in/" ><li class="foot-links">Centre for South-West Asia Study</li></a>
+                        <a href="http://www.punjabiuniversity.ac.in/cdeiswebsite/index.html" ><li class="foot-links">Centre for Development Economics and Innovation Studies</li></a>
+                        <a href="http://punjabiuniversity.ac.in/help/" ><li class="foot-links">Punjabi computer Help Centre</li></a>
+                       
+                    </ul>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-xs-6">
+                    <ul>
+                        <a href="http://punjabiuniversity.ac.in/dlpl/" ><li class="foot-links">Department of Linguistics and Punjabi Lexicography</li></a>
+                        <a href="http://www.gurmatsangeetpup.com/index.html" ><li class="foot-links">Gurmat Sangeet</li></a>
+                        <a href="http://www.learnpunjabi.org/intro1.asp" ><li class="foot-links">Learn Punjabi</li></a>
+                        <a href="http://punjabiuniversity.ac.in/puexam/results.html" ><li class="foot-links">Results</li></a>
+                        
+                    </ul>   
+                    </div>
+                    <div class="col-xs-6">
+                    <ul>
+                        <a href="http://www.learnpunjabi.org/" ><li class="foot-links">Advanced Centre for Technical Development of Punjabi
+Language, Literature & Culture</li></a>
+                        
+                        
+                    </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" style="background-color:#252525">
+        <div class="row" >
+           
+                <div class="row">
+                    <div align="right">
+                      
+                    <h5 style = "margin-right:15px ; padding :10px; color:#EEE" ><b>CREDITS : DEPARTMENT OF COMPUTER ENGINEERING,<br> PUNJABI UNIVERSITY,PATIALA</h5>
+          
+                </div>
+                </div>
+            
+        </div>
+    </div>
+
+
+</footer>
 </html>
