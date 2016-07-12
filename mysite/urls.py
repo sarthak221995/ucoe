@@ -23,6 +23,7 @@ urlpatterns = [
 
      url(r'', include('notice.urls')),
      url(r'^hackoders/',include('highlights.urls')),
+     url(r'^icrtc/',include('highlights.urls')),
      url(r'^about/', include('about.urls')),
      url(r'^tech_faculty/', include('faculty.urls')),
      url(r'^faculty/', include('faculty.urls')),
