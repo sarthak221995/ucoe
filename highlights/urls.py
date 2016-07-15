@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^4/$', views.post_gta, name='post_gta'),
     url(r'^5/$', views.post_date, name='post_date'),
     url(r'^6/$', views.post_contact, name='post_contact'),
+    url(r'^7/$', views.post_reg, name='post_reg'),
    
 ]

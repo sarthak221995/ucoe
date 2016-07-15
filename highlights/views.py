@@ -22,4 +22,9 @@ def post_contact(request):
     return render(request, 'highlights/contact.html', {})
 
 
+def post_reg(request):
+    return render(request, 'highlights/reg.html', {})
+
+
+
     # Create your views here.
