@@ -26,5 +26,9 @@ def post_reg(request):
     return render(request, 'highlights/reg.html', {})
 
 
+def post_comitte(request):
+    return render(request, 'highlights/comitte.html', {})
+
+
 
     # Create your views here.
