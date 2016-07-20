@@ -203,7 +203,7 @@
         <!-- Intro Content -->
  <div id="HOD"> 
           
-                   <h3 class="page-header"><b>DOWNLOAD SYLLABUS</b></h3>
+                   <h3 class="page-header"><b>DOWNLOAD TIMETABLE</b></h3>
 
             
                
@@ -211,12 +211,12 @@
             
 
   {% for post in posts %}
-                 {% if post.syllabus_year %}
+                 {% if post.time_table_upload %}
 
                              
                      <div class="list-group">
   
-    <h4> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; <a href="/media/{{post.syllabus_upload}}">{{post.syllabus_year}}</h4>
+    <h4> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; <a href="/media/{{post.time_table_upload }}">{{post.time_table_group}}</h4>
  
 </div>
  {% endif %}   
