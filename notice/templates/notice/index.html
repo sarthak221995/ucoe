@@ -300,7 +300,7 @@ style="width:300px;Height:130px;" scrollamount="3" direction="Up">
                             {% if post.title_notice %}
                 <h4><a href="{{post.link_notice}}">{{ post.title_notice }}</a></h4>
                 <p align="justify">{{ post.text_notice }}</p>
-        <h6>published: {{ post.created_date_notice }}</h6>
+        <!-- <h6>published: {{ post.created_date_notice }}</h6> -->
          <br>
         {% endif %}
     {% endfor %} <br />
@@ -324,7 +324,7 @@ style="width:300px;Height:130px;" scrollamount="3" direction="Up">
                              {% if post.title_announcement %}
                 <h4><a href="{{post.link_announcement}}">{{ post.title_announcement }}</a></h4>
                 <p align="justify">{{ post.text_announcement }}</p>
-        <h6>published: {{ post.created_date_announcement }}</h6>
+        <!-- <h6>published: {{ post.created_date_announcement }}</h6> -->
         <br>
     {% endif %}
     {% endfor %} <br />
